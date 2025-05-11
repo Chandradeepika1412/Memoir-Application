@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Memoir - Travel Memories</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-book-open"></i> My Memoir</h1>
+        <p>Preserve your precious travel memories</p>
+    </header>
+
+    <main>
+        <section class="add-memory">
+            <h2>Add a New Memory</h2>
+            <form id="memory-form">
+                <div class="form-group">
+                    <label for="trip-name">Trip Name:</label>
+                    <input type="text" id="trip-name" required placeholder="E.g., Summer Vacation 2023">
+                </div>
+                
+                <div class="form-group">
+                    <label for="memory-image">Upload Image:</label>
+                    <input type="file" id="memory-image" accept="image/*">
+                    <div class="image-preview" id="image-preview"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="memory-description">Description:</label>
+                    <textarea id="memory-description" rows="4" required placeholder="Share your experience..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="memory-date">Date:</label>
+                    <input type="date" id="memory-date" required>
+                </div>
+                
+                <button type="submit" class="btn"><i class="fas fa-save"></i> Save Memory</button>
+            </form>
+        </section>
+
+        <section class="memories-list">
+            <h2>Your Memories</h2>
+            <div class="search-filter">
+                <input type="text" id="search-memories" placeholder="Search memories...">
+                <select id="filter-date">
+                    <option value="">All Dates</option>
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                </select>
+            </div>
+            <div class="memories-container" id="memories-container">
+                <!-- Memories will be displayed here -->
+                <p class="no-memories">No memories yet. Add your first memory above!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Memoir App | Made with <i class="fas fa-heart"></i></p>
+    </footer>
+
+    <div class="modal" id="memory-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p class="modal-date" id="modal-date"></p>
+            <div class="modal-image-container">
+                <img id="modal-image" src="" alt="Memory Image">
+            </div>
+            <p class="modal-description" id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
