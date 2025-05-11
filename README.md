@@ -10,10 +10,10 @@ Edit
 git clone https://github.com/Chandradeepika1412/Memoir-Application
 cd memoir-application
 Open the project:
+
 Simply open the index.html file in your preferred browser. 🌍
 
 Usage 🚀
-
 Write and save your memoirs (add text, images, videos) ✍️📷📹.
 
 View and edit your entries anytime 🔄.
@@ -30,10 +30,10 @@ Privacy settings for each entry 🔐
 Search your stories 🔍
 
 File Structure 📁
-
+plaintext
+Copy
+Edit
 /memoir-application
     ├── index.html         # Main HTML file 🏠
     ├── style.css          # Custom CSS for styling 🎨
     ├── script.js          # JavaScript for functionality ⚡
-License 📄
-MIT License
